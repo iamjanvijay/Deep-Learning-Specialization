@@ -135,6 +135,7 @@ tf.contrib.layers.fully_connected(F, num_outputs)
 tf.nn.softmax_cross_entropy_with_logits(logits = Z3, labels = Y)
 # computes the softmax entropy loss. 
 # This function both computes the softmax activation function as well as the resulting loss.
+# It is important to know that the "logits" and "labels" inputs of tf.nn.softmax_cross_entropy_with_logits are expected to be of shape (number of examples, num_classes). 
 
 tf.reduce_mean 
 # computes the mean of elements across dimensions of a tensor
